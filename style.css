@@ -160,13 +160,13 @@ p {
 }
 /*carrusel*/
 .yocarrusel{
-   margin: auto;
-   width: 40%;
-   
+   margin: 30px auto ;
+   width: 30%;
 }
-.tamañocarrusel{
-   margin: 0px 60px;
+.carru{
+    background-color: black;   
 }
+
 /*este es  grid de mig */
 .grid-container{
     align-items: center;
@@ -288,12 +288,12 @@ p {
     border: 10px solid rgb(6, 6, 39);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40vh 30vh 30vh;
     grid-template-areas: 
-               "tuberia cocina cocina"
-               "tanque video video"
-               "tanque video video"                 
+               "tanque tanque tuberia tuberia"
+               "tanque tanque cocina cocina"
+               "tanque tanque cocina cocina"                 
     ;
 }
 .tuberia{
@@ -309,11 +309,6 @@ p {
 .cocina{
     grid-area: cocina;
     width: 100%;
-    height: 100%;
-}
-.video{
-    grid-area: video;
-    width:100%;
     height: 100%;
 }
 

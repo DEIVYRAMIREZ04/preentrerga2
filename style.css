@@ -1,0 +1,334 @@
+
+.body-p {
+    background-image: url(./imagenes/lamina\ acero1.jpg);
+    padding: 3em;
+}
+.body-contacto {
+   background-color: goldenrod;
+}
+
+p {
+    font-weight: bold;
+}
+.lgo{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+
+   
+}
+
+/*titulos h1*/
+.tit{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(140, 25, 25);
+    padding:0%;
+    margin: 5%;
+}
+/*social media*/
+#prin{
+    background-color: blue;
+    margin: 2em;
+    padding: 10px;
+    border: 2px solid black;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    
+}
+
+/*caja del video*/
+.prin1{
+    background-color: gray;
+    width: 50%;  
+    height: 500px;
+    border: 8px solid black;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    
+}
+
+/*este el de imagenes individuales*/
+.pro1{
+    display: block;
+    margin: auto;
+    width:70%;
+    height:300px;
+    border: 10px solid black;
+    border-radius: 20px;
+    
+}
+.pro{
+    width: 20em;
+    height: 20em;
+    border: 5px solid rgb(37, 37, 183);
+    border-radius: 10px;
+}
+/*parte la pantalla de las imagenes individuales*/
+.dividir{
+    display: flex;
+}
+.respon{
+    flex-wrap: wrap;
+    row-gap:2em;
+}
+/*titulo ppal del index*/
+.res{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2em;
+    margin-top: 3em;
+    font-size: 2em;
+    color: black;
+}
+/*este es el boton de regreso a inicio*/
+.borde{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    text-decoration: none;
+    color: rgb(6, 56, 23);
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 100;
+}
+/*boton de wsap*/
+.wsap{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/*barra de menu*/
+.nave{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;  
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(19, 36, 2);
+    flex-wrap: wrap;
+    gap: 10px;
+      
+}
+/*elementos de la barra*/
+.none{
+    padding: 5px;
+    background-color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight:bold;
+    border-radius: 10px;
+    
+}
+.sticky{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+/*esta es la clase del off canvas*/
+.letra{
+    font-size: 2em;
+    color: blueviolet;
+    font-weight: bold;
+}
+/*footers*/
+.foot{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: black;
+    background-color: rgb(48, 59, 70);
+}
+/*titulo de formulario*/
+.link{
+    font-size: 2em;
+    color: rgb(196, 60, 7);
+}
+/*carrusel*/
+.yocarrusel{
+   margin: auto;
+   width: 40%;
+   
+}
+.tamañocarrusel{
+   margin: 0px 60px;
+}
+/*este es  grid de mig */
+.grid-container{
+    align-items: center;
+    padding-right: 10px;
+    background-color:rgb(66, 18, 18);
+    border: 10px solid rgb(66, 18, 18);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 25vh 50vh 25vh;
+    grid-template-areas: 
+           "carros puente puente techo"
+           "catapila edificio edificio techo"
+           "catapila edificio edificio robot"
+    ;  
+}
+.carros{
+    grid-area: carros;
+    width: 100%;
+    height: 100%
+}
+.catapila{
+    grid-area: catapila;
+    width: 100%;
+    height: 100%
+}
+.puente{
+    grid-area: puente;
+    width: 100%;
+    height: 100%
+}
+.edificio{
+    grid-area: edificio;
+    width: 100%;
+    height: 100%
+}
+.techo{
+    grid-area: techo;
+    width: 100%;
+    height: 100%
+}
+.robot{
+    grid-area: robot;
+    width: 100%;
+    height: 100%
+}
+.grid-container img{
+    width: 100%;
+    border: 5px solid rgb(66, 18, 18);
+    border-radius: 20px;
+}
+/*grid de imagenes smaw*/
+.grid-img{
+    align-items: center;
+    padding-right: 10px;
+    background-color: rgb(6, 6, 39);
+    border: 10px solid rgb(6, 6, 39);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh 30vh 40vh;
+    grid-template-areas: 
+            "puerta tubo porton porton"
+            "puerta sercha porton porton"
+            "escalas pergola pergola pasamanos"
+    ;
+}
+.puerta{
+    
+    grid-area: puerta;
+    width: 100%;
+    height: 100%;
+     
+}
+.tubo{
+    grid-area: tubo;
+    width: 100%;
+    height: 100%;
+    
+}
+.porton{
+    grid-area: porton;
+    width: 100%;
+    height: 100%;
+}
+.escalas{
+    grid-area: escalas;
+    width: 100%;
+    height: 100%;
+}
+.sercha{
+    grid-area: sercha;
+    width: 100%;
+    height: 100%;
+}
+.pergola{
+    grid-area: pergola;
+    width: 100%;
+    height: 100%;
+}
+.pasamanos{
+    grid-area: pasamanos;
+    width: 100%;
+    height: 100%;
+    
+}
+/*bordo para este grid por cada imagen*/
+
+.grid-img img {
+    width: 100%;
+    border: 5px solid rgb(6, 6, 39);
+    border-radius: 20px;
+}
+/*este es el grid de tig*/
+.grid-container2{
+    align-items: center;
+    padding-right: 10px;
+    background-color: rgb(6, 6, 39);
+    border: 10px solid rgb(6, 6, 39);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40vh 30vh 30vh;
+    grid-template-areas: 
+               "tuberia cocina cocina"
+               "tanque video video"
+               "tanque video video"                 
+    ;
+}
+.tuberia{
+    grid-area: tuberia;
+    width: 100%;
+    height: 100%;
+}
+.tanque{
+    grid-area: tanque;
+    width: 100%;
+    height: 100%;
+}
+.cocina{
+    grid-area: cocina;
+    width: 100%;
+    height: 100%;
+}
+.video{
+    grid-area: video;
+    width:100%;
+    height: 100%;
+}
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}    

@@ -71,9 +71,12 @@ p {
     border: 5px solid rgb(37, 37, 183);
     border-radius: 10px;
 }
+
 /*parte la pantalla de las imagenes individuales*/
 .dividir{
     display: flex;
+   align-items: center;
+   
 }
 .respon{
     flex-wrap: wrap;

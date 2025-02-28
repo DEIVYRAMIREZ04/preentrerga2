@@ -315,18 +315,27 @@ p {
     height: 100%;
 }
 
-/* Media query para tabletas */
-@media (min-width: 600px) {
-    body {
-        font-size: 18px;
-        padding: 40px;
+/* Media query para mobiles */
+@media (min-width: 320px) and (max-width: 768px) {
+    .body-p {
+        
+        background-image: unset;
+        background-color: brown;
+        font-size: 10px;
+        padding-top: 80px;
+    }
+    .miacanvas{
+        font-size: 8px;
+       
+    }
+    .lgo-r{
+        width: 100%;
+        
+    }
+    .prin1{
+        width: 80%;
+        height: 200px;
     }
 }
 
-/* Media query para computadoras de escritorio */
-@media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-        padding: 30px;
-    }
-}    
+

@@ -172,11 +172,6 @@ p {
 
 /*este es  grid de mig */
 .grid-container{
-    align-items: center;
-    padding-right: 10px;
-    background-color:rgb(66, 18, 18);
-    border: 10px solid rgb(66, 18, 18);
-    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 25vh 50vh 25vh;
@@ -223,11 +218,6 @@ p {
 }
 /*grid de imagenes smaw*/
 .grid-img{
-    align-items: center;
-    padding-right: 10px;
-    background-color: rgb(6, 6, 39);
-    border: 10px solid rgb(6, 6, 39);
-    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30vh 30vh 40vh;
@@ -284,12 +274,7 @@ p {
     border-radius: 20px;
 }
 /*este es el grid de tig*/
-.grid-container2{
-    align-items: center;
-    padding-right: 10px;
-    background-color: rgb(6, 6, 39);
-    border: 10px solid rgb(6, 6, 39);
-    border-radius: 10px;
+.grid-container2{   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40vh 30vh 30vh;
@@ -314,6 +299,11 @@ p {
     width: 100%;
     height: 100%;
 }
+.grid-container2 img{
+    width: 100%;
+    border: 5px solid rgb(6, 6, 39);
+    border-radius: 20px;
+}
 
 /* Media query para mobiles */
 @media (min-width: 320px) and (max-width: 768px) {
@@ -336,6 +326,21 @@ p {
         width: 80%;
         height: 200px;
     }
+    .dividir{
+      flex-direction: column;
+    }
+    .wsap{
+        bottom: 0;
+        right: 0;
+    }
+    .borde{
+        font-size: 1.5em;
+    }
+    .res-flex{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+
 }
-
-

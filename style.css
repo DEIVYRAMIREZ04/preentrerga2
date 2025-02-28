@@ -145,7 +145,7 @@ p {
 /*esta es la clase del off canvas*/
 .letra{
     font-size: 2em;
-    color: blueviolet;
+    color: antiquewhite;
     font-weight: bold;
 }
 /*footers*/
@@ -310,7 +310,7 @@ p {
     .body-p {
         
         background-image: unset;
-        background-color: brown;
+        background-image: url(./imagenes/alfajor.jpg);
         font-size: 10px;
         padding-top: 80px;
     }

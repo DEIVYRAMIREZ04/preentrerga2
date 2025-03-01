@@ -2,14 +2,18 @@
 .body-p {
     background-image: url(./imagenes/lamina\ acero1.jpg);
     padding: 3em;
+    font-size: 1.5em;
 }
 .body-contacto {
    background-color: goldenrod;
 }
 
 p {
+    font-size: 1.5em;
     font-weight: bold;
 }
+
+
 .lgo{
     background-color: white;
     border: 5px solid white;
@@ -165,10 +169,14 @@ p {
 .yocarrusel{
    margin: 30px auto ;
    width: 30%;
+   margin-bottom: 6em;
 }
-.carru{
-    background-color: black;   
+.tit-carrusel{
+    font-size: 3em;
+    color: black;
+    text-align: center;
 }
+
 
 /*este es  grid de mig */
 .grid-container{

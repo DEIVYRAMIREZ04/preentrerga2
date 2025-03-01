@@ -347,6 +347,8 @@
         flex-direction: column;
         row-gap: 2em;
     }
-
+    .active{
+        font-size: 2em;
+    }
 
 }

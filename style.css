@@ -88,7 +88,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 2em;
     margin-top: 3em;
-    font-size: 2em;
+    font-size: 1em;
     color: black;
 }
 /*este es el boton de regreso a inicio*/
@@ -145,7 +145,7 @@
 }
 /*esta es la clase del off canvas*/
 .letra{
-    font-size: 2em;
+    font-size: 1,5em;
     color: antiquewhite;
     font-weight: bold;
 }
@@ -318,6 +318,7 @@
         background-color: grey;
         font-size: 0.8em;
         color: darkred;
+        padding-top: 3em;
     }
     .miacanvas{
         font-size: 8px;

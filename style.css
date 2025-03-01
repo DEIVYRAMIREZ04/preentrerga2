@@ -318,9 +318,9 @@ p {
     .body-p {
         
         background-image: unset;
-        background-image: url(./imagenes/alfajor.jpg);
-        font-size: 10px;
-        padding-top: 80px;
+        background-color: grey;
+        font-size: 0.8em;
+        color: darkred;
     }
     .miacanvas{
         font-size: 8px;

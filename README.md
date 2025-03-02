@@ -1,6 +1,6 @@
 Repositorio preentrega2
 <h1 align="center">Hola 👋, soy DEIVY RAMIREZ</h1>
-<h3 align="center">Una apasionada desarrolladora frontend de COLOMBIA</h3>
+<h3 align="center">Una apasionado desarrollador frontend de COLOMBIA</h3>
 
 <h3 align="left">Conéctate conmigo:</h3>
 <p align="left">

@@ -2,6 +2,7 @@
 .body-p {
     background-image: url(./imagenes/lamina\ acero1.jpg);
     font-size: 1.5em;
+    padding-right: 0.3em;
 }
 .pp{
     padding: 3em;
@@ -160,6 +161,12 @@
     font-size: 2em;
     color: black;
     background-color: rgb(48, 59, 70);
+    align-content: center;
+    
+}
+.flex-formu{
+    display: flex;
+    justify-content: center;
 }
 /*titulo de formulario*/
 .link{

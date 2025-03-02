@@ -1,8 +1,10 @@
 
 .body-p {
     background-image: url(./imagenes/lamina\ acero1.jpg);
-    padding: 3em;
     font-size: 1.5em;
+}
+.pp{
+    padding: 3em;
 }
 .body-contacto {
    background-color: goldenrod;
@@ -27,8 +29,10 @@
     font-size: 3em;
     text-align: center;
     color: rgb(140, 25, 25);
-    padding:10%;
-    
+      
+}
+.tit-1{
+    padding: 3em;
 }
 /*social media*/
 #prin{
@@ -317,9 +321,13 @@
         background-image: unset;
         background-color: grey;
         font-size: 0.8em;
-        color: darkred;
+        color: rgb(27, 20, 20);
+        margin: 5px;
+    }
+    .pp{
         padding-top: 5em;
     }
+    
     .miacanvas{
         font-size: 8px;
        
@@ -350,5 +358,4 @@
     .active{
         font-size: 3em;
     }
-
 }

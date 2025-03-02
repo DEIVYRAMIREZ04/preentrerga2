@@ -2,7 +2,6 @@
 .body-p {
     background-image: url(./imagenes/lamina\ acero1.jpg);
     font-size: 1.5em;
-    padding-right: 0.3em;
 }
 .pp{
     padding: 3em;
@@ -125,7 +124,7 @@
     display: flex;
     justify-content: space-around;  
     padding: 10px;
-    width: 100%;
+    
     height: auto;
     background-color: rgb(19, 36, 2);
     flex-wrap: wrap;
@@ -161,7 +160,9 @@
     font-size: 2em;
     color: black;
     background-color: rgb(48, 59, 70);
-    align-content: center;
+    align-content: center;border: 2px solid black;
+    border-radius: 5%;
+
     
 }
 .flex-formu{
@@ -199,36 +200,29 @@
 }
 .carros{
     grid-area: carros;
-    width: 100%;
-    height: 100%
+    
 }
 .catapila{
     grid-area: catapila;
-    width: 100%;
-    height: 100%
+    
 }
 .puente{
     grid-area: puente;
-    width: 100%;
-    height: 100%
+    
 }
 .edificio{
     grid-area: edificio;
-    width: 100%;
-    height: 100%
+    
 }
 .techo{
     grid-area: techo;
-    width: 100%;
-    height: 100%
+    
 }
 .robot{
     grid-area: robot;
-    width: 100%;
-    height: 100%
+    
 }
 .grid-container img{
-    width: 100%;
     border: 5px solid rgb(66, 18, 18);
     border-radius: 20px;
 }
@@ -246,46 +240,38 @@
 .puerta{
     
     grid-area: puerta;
-    width: 100%;
-    height: 100%;
+   
      
 }
 .tubo{
     grid-area: tubo;
-    width: 100%;
-    height: 100%;
+    
     
 }
 .porton{
     grid-area: porton;
-    width: 100%;
-    height: 100%;
+   
 }
 .escalas{
     grid-area: escalas;
-    width: 100%;
-    height: 100%;
+   
 }
 .sercha{
     grid-area: sercha;
-    width: 100%;
-    height: 100%;
+   
 }
 .pergola{
     grid-area: pergola;
-    width: 100%;
-    height: 100%;
+   
 }
 .pasamanos{
     grid-area: pasamanos;
-    width: 100%;
-    height: 100%;
+    
     
 }
 /*bordo para este grid por cada imagen*/
 
 .grid-img img {
-    width: 100%;
     border: 5px solid rgb(6, 6, 39);
     border-radius: 20px;
 }
@@ -302,21 +288,18 @@
 }
 .tuberia{
     grid-area: tuberia;
-    width: 100%;
-    height: 100%;
+    
 }
 .tanque{
     grid-area: tanque;
-    width: 100%;
-    height: 100%;
+    
 }
 .cocina{
     grid-area: cocina;
-    width: 100%;
-    height: 100%;
+    
 }
 .grid-container2 img{
-    width: 100%;
+       
     border: 5px solid rgb(6, 6, 39);
     border-radius: 20px;
 }
@@ -329,7 +312,6 @@
         background-color: grey;
         font-size: 0.8em;
         color: rgb(16, 11, 11);
-        margin: 5px;
     }
     .pp{
         padding-top: 8em;
@@ -364,5 +346,8 @@
     }
     .active{
         font-size: 3em;
+    }
+    .foot{
+       width: 35%;
     }
 }

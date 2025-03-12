@@ -1,41 +1,44 @@
-
 .body-p {
-    background-image: url(./imagenes/lamina\ acero1.jpg);
+    background-image: url(../imagenes/lamina\ acero1.jpg);
     font-size: 1.5em;
 }
-.pp{
+
+.pp {
     padding: 3em;
 }
+
 .body-contacto {
-   background-color: goldenrod;
+    background-color: goldenrod;
 }
 
 
 
 
-.lgo{
+.lgo {
     background-color: white;
     border: 5px solid white;
     border-radius: 10px;
     display: inline-block;
     padding: 10px;
 
-   
+
 }
 
 /*titulos h1*/
-.tit{
+.tit {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3em;
     text-align: center;
     color: rgb(140, 25, 25);
-      
+
 }
-.tit-1{
+
+.tit-1 {
     padding: 3em;
 }
+
 /*social media*/
-#prin{
+#prin {
     background-color: blue;
     margin: 2em;
     padding: 10px;
@@ -45,32 +48,33 @@
     justify-content: space-around;
     border-radius: 10px;
     flex-wrap: wrap;
-    
+
 }
 
 /*caja del video*/
-.prin1{
+.prin1 {
     background-color: gray;
-    width: 50%;  
+    width: 50%;
     height: 500px;
     border: 8px solid black;
     border-radius: 20px;
     display: block;
     margin: auto;
-    
+
 }
 
 /*este el de imagenes individuales*/
-.pro1{
+.pro1 {
     display: block;
     margin: auto;
-    width:70%;
-    height:300px;
+    width: 70%;
+    height: 300px;
     border: 10px solid black;
     border-radius: 20px;
-    
+
 }
-.pro{
+
+.pro {
     width: 20em;
     height: 20em;
     border: 5px solid rgb(37, 37, 183);
@@ -78,25 +82,28 @@
 }
 
 /*parte la pantalla de las imagenes individuales*/
-.dividir{
+.dividir {
     display: flex;
-   align-items: center;
-   
+    align-items: center;
+
 }
-.respon{
+
+.respon {
     flex-wrap: wrap;
-    row-gap:2em;
+    row-gap: 2em;
 }
+
 /*titulo ppal del index*/
-.res{
+.res {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 2em;
     margin-top: 3em;
     font-size: 1em;
     color: black;
 }
+
 /*este es el boton de regreso a inicio*/
-.borde{
+.borde {
     background-color: white;
     border: 5px solid white;
     border-radius: 10px;
@@ -111,76 +118,87 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 100;
 }
+
 /*boton de wsap*/
-.wsap{
+.wsap {
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
+
 /*barra de menu*/
-.nave{
+.nave {
     align-items: center;
     list-style: none;
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     padding: 10px;
-    
+
     height: auto;
     background-color: rgb(19, 36, 2);
     flex-wrap: wrap;
     gap: 10px;
-      
+
 }
+
 /*elementos de la barra*/
-.none{
+.none {
     padding: 5px;
     background-color: black;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-weight:bold;
+    font-weight: bold;
     border-radius: 10px;
-    
+
 }
-.sticky{
+
+.sticky {
     z-index: 1000;
     position: sticky;
     top: 0;
 }
+
 /*esta es la clase del off canvas*/
-.letra{
-    font-size: 1,5em;
+.letra {
+    font-size: 1, 5em;
     color: antiquewhite;
     font-weight: bold;
 }
+
 /*footers*/
-.foot{
+.foot {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: black;
     background-color: rgb(48, 59, 70);
-    align-content: center;border: 2px solid black;
+    align-content: center;
+    border: 2px solid black;
     border-radius: 5%;
 
-    
+
 }
-.flex-formu{
+
+.flex-formu {
     display: flex;
     justify-content: center;
 }
+
 /*titulo de formulario*/
-.link{
+.link {
     font-size: 2em;
     color: rgb(196, 60, 7);
 }
+
 /*carrusel*/
-.yocarrusel{
-   margin: 30px auto ;
-   width: 30%;
-   margin-bottom: 6em;
+.yocarrusel {
+    margin: 30px auto;
+    width: 30%;
+    margin-bottom: 6em;
 }
-.tit-carrusel{
+
+.tit-carrusel {
     font-size: 3em;
     color: black;
     text-align: center;
@@ -188,118 +206,168 @@
 
 
 /*este es  grid de mig */
-.grid-container{
+.grid-container {
+    border-radius: 20px;
+    align-items: center;
+    padding:  15px 20px 15px 10px;
+    background-color: rgb(66, 18, 18);
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 25vh 50vh 25vh;
-    grid-template-areas: 
-           "carros puente puente techo"
-           "catapila edificio edificio techo"
-           "catapila edificio edificio robot"
-    ;  
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh 40vh 30vh;
+    grid-template-areas:
+        "carros puente puente techo"
+        "catapila edificio edificio techo"
+        "catapila edificio edificio robot"
+    ;
 }
-.carros{
+
+.carros {
     grid-area: carros;
-    
+    width: 100%;
+    height: 100%;
 }
-.catapila{
+
+.catapila {
     grid-area: catapila;
-    
+    width: 100%;
+    height: 100%;
 }
-.puente{
+
+.puente {
     grid-area: puente;
-    
+    width: 100%;
+    height: 100%;
 }
-.edificio{
+
+.edificio {
     grid-area: edificio;
-    
+    width: 100%;
+    height: 100%;
 }
-.techo{
+
+.techo {
     grid-area: techo;
-    
+    width: 100%;
+    height: 100%;
 }
-.robot{
+
+.robot {
     grid-area: robot;
-    
+    width: 100%;
+    height: 100%;
 }
-.grid-container img{
+
+.grid-container img {
     border: 5px solid rgb(66, 18, 18);
     border-radius: 20px;
 }
+
 /*grid de imagenes smaw*/
-.grid-img{
+.grid-img {
+    border-radius: 20px;
+    align-items: center;
+    padding:  15px 20px 15px 10px;
+    background-color:rgb(6, 6, 39); 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30vh 30vh 40vh;
-    grid-template-areas: 
-            "puerta tubo porton porton"
-            "puerta sercha porton porton"
-            "escalas pergola pergola pasamanos"
+    gap: 10px;
+    grid-template-areas:    
+        "puerta tubo porton porton"
+        "escalas sercha porton porton"
+        "escalas pergola pergola pasamanos"
     ;
 }
-.puerta{
-    
+
+.puerta {
+
     grid-area: puerta;
-   
-     
+    width: 100%;
+    height: 100%;
 }
-.tubo{
+
+.tubo {
     grid-area: tubo;
-    
-    
+    width: 100%;
+    height: 100%;
 }
-.porton{
+
+.porton {
     grid-area: porton;
-   
+    width: 100%;
+    height: 100%;
 }
-.escalas{
+
+.escalas {
     grid-area: escalas;
-   
+    width: 100%;
+    height: 100%;
 }
-.sercha{
+
+.sercha {
     grid-area: sercha;
-   
+    width: 100%;
+    height: 100%;
 }
-.pergola{
+
+.pergola {
     grid-area: pergola;
-   
+    width: 100%;
+    height: 100%;
 }
-.pasamanos{
+
+.pasamanos {
     grid-area: pasamanos;
-    
-    
+    width: 100%;
+    height: 100%;
+
 }
+
 /*bordo para este grid por cada imagen*/
 
 .grid-img img {
     border: 5px solid rgb(6, 6, 39);
     border-radius: 20px;
 }
+
 /*este es el grid de tig*/
-.grid-container2{   
+.grid-container2 {
+    border-radius: 20px;
+    align-items: center;
+    padding:  15px 20px 15px 10px;
+    background-color:rgb(6, 6, 39); 
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40vh 30vh 30vh;
-    grid-template-areas: 
-               "tanque tanque tuberia tuberia"
-               "tanque tanque cocina cocina"
-               "tanque tanque cocina cocina"                 
+    grid-template-areas:
+        "tanque tanque tuberia tuberia"
+        "tanque tanque cocina cocina"
+        "tanque tanque cocina cocina"
     ;
 }
-.tuberia{
+
+.tuberia {
     grid-area: tuberia;
-    
+    width: 100%;
+    height: 100%;
 }
-.tanque{
+
+.tanque {
     grid-area: tanque;
-    
+    width: 100%;
+    height: 100%;
 }
-.cocina{
+
+.cocina {
     grid-area: cocina;
-    
+    width: 100%;
+    height: 100%;
 }
-.grid-container2 img{
-       
+
+.grid-container2 img {
+
     border: 5px solid rgb(6, 6, 39);
     border-radius: 20px;
 }
@@ -307,48 +375,57 @@
 /* Media query para mobiles */
 @media (min-width: 320px) and (max-width: 768px) {
     .body-p {
-        
+
         background-image: unset;
         background-color: grey;
         font-size: 0.8em;
         color: rgb(16, 11, 11);
         margin-bottom: 10em;
     }
-    .pp{
+
+    .pp {
         padding-top: 8em;
     }
-    
-    .miacanvas{
+
+    .miacanvas {
         font-size: 8px;
-       
+
     }
-    .lgo-r{
+
+    .lgo-r {
         width: 100%;
-        
+
     }
-    .prin1{
+
+    .prin1 {
         width: 80%;
         height: 200px;
     }
-    .dividir{
-      flex-direction: column;
+
+    .dividir {
+        flex-direction: column;
     }
-    .wsap{
+
+    .wsap {
         bottom: 0;
         right: 0;
     }
-    .borde{
+
+    .borde {
         font-size: 1.5em;
     }
-    .res-flex{
+
+    .res-flex {
         display: flex;
         flex-direction: column;
         row-gap: 2em;
     }
-    .active{
+
+    .active {
         font-size: 3em;
     }
-    .foot{
-       width: 35%;
+
+    .foot {
+        width: 35%;
     }
 }

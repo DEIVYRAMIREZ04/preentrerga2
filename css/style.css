@@ -1,27 +1,39 @@
 .body-p {
     background-image: url(../imagenes/lamina\ acero1.jpg);
-    font-size: 1.5em;
-}
-
-.pp {
+    font-size: 1em;
     padding: 3em;
 }
+
+
 
 .body-contacto {
     background-color: goldenrod;
 }
 
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .lgo {
-    background-color: white;
-    border: 5px solid white;
+    background-image: url(../imagenes/alfajor-hierro-b.jpg);
+    border: 15px solid white;
     border-radius: 10px;
     display: inline-block;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+}
 
+.log-img {
+    width: 75%;
+}
 
+/*h2*/
+h2 {
+    padding: 3em;
+    color: rgb(140, 25, 25);
 }
 
 /*titulos h1*/
@@ -30,12 +42,11 @@
     font-size: 3em;
     text-align: center;
     color: rgb(140, 25, 25);
+    padding-top: 15px;
 
 }
 
-.tit-1 {
-    padding: 3em;
-}
+
 
 /*social media*/
 #prin {
@@ -84,13 +95,8 @@
 /*parte la pantalla de las imagenes individuales*/
 .dividir {
     display: flex;
-    align-items: center;
-
-}
-
-.respon {
-    flex-wrap: wrap;
-    row-gap: 2em;
+    align-items: start;
+    padding: 10px;
 }
 
 /*titulo ppal del index*/
@@ -98,7 +104,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 2em;
     margin-top: 3em;
-    font-size: 1em;
+    font-size: 2em;
     color: black;
 }
 
@@ -111,12 +117,14 @@
     padding: 5px;
     position: fixed;
     bottom: 0px;
-    left: 10px;
-    text-decoration: none;
-    color: rgb(6, 56, 23);
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 100;
+}
+
+.borde-a {
+    text-decoration: none;
+    color: rgb(6, 56, 23);
 }
 
 /*boton de wsap*/
@@ -126,7 +134,7 @@
     right: 20px;
 }
 
-/*barra de menu*/
+/*barra de menu
 .nave {
     align-items: center;
     list-style: none;
@@ -141,7 +149,7 @@
 
 }
 
-/*elementos de la barra*/
+elementos de la barra
 .none {
     padding: 5px;
     background-color: black;
@@ -157,11 +165,11 @@
     z-index: 1000;
     position: sticky;
     top: 0;
-}
+}*/
 
 /*esta es la clase del off canvas*/
 .letra {
-    font-size: 1, 5em;
+    font-size: 1.5em;
     color: antiquewhite;
     font-weight: bold;
 }
@@ -175,14 +183,20 @@
     background-color: rgb(48, 59, 70);
     align-content: center;
     border: 2px solid black;
-    border-radius: 5%;
+    border-radius: 20px;
 
 
+}
+
+.formu {
+    padding-left: 10vh;
+    align-items: center;
 }
 
 .flex-formu {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 /*titulo de formulario*/
@@ -191,15 +205,14 @@
     color: rgb(196, 60, 7);
 }
 
-/*carrusel*/
+/*carrusel--r*/
 .yocarrusel {
     margin: 30px auto;
     width: 30%;
-    margin-bottom: 6em;
 }
 
 .tit-carrusel {
-    font-size: 3em;
+
     color: black;
     text-align: center;
 }
@@ -209,7 +222,7 @@
 .grid-container {
     border-radius: 20px;
     align-items: center;
-    padding:  15px 20px 15px 10px;
+    padding: 15px;
     background-color: rgb(66, 18, 18);
     display: grid;
     gap: 10px;
@@ -267,13 +280,13 @@
 .grid-img {
     border-radius: 20px;
     align-items: center;
-    padding:  15px 20px 15px 10px;
-    background-color:rgb(6, 6, 39); 
+    padding: 15px;
+    background-color: rgb(6, 6, 39);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30vh 30vh 40vh;
     gap: 10px;
-    grid-template-areas:    
+    grid-template-areas:
         "puerta tubo porton porton"
         "escalas sercha porton porton"
         "escalas pergola pergola pasamanos"
@@ -335,8 +348,8 @@
 .grid-container2 {
     border-radius: 20px;
     align-items: center;
-    padding:  15px 20px 15px 10px;
-    background-color:rgb(6, 6, 39); 
+    padding: 15px;
+    background-color: rgb(6, 6, 39);
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
@@ -372,6 +385,8 @@
     border-radius: 20px;
 }
 
+
+
 /* Media query para mobiles */
 @media (min-width: 320px) and (max-width: 768px) {
     .body-p {
@@ -390,6 +405,10 @@
     .miacanvas {
         font-size: 8px;
 
+    }
+
+    .tit {
+        padding-top: 60px;
     }
 
     .lgo-r {
@@ -426,6 +445,9 @@
     }
 
     .foot {
-        width: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
     }
 }

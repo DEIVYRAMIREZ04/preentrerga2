@@ -1,0 +1,26 @@
+@mixin body-pp($fz, $fw, $pad){
+    font-size: $fz;
+    font-weight: $fw;
+    padding: $pad;
+}
+@mixin posiciones($z, $po, $pad){
+    z-index: $z;
+    position:$po;
+    padding: $pad;
+}
+
+@mixin flex($display, $j-cont, $padi){
+    display: $display;
+    justify-content: $cont;
+    padding: $padi;
+}
+@mixin grid($disp, $gap, $bground){
+    display: $disp;
+    gap: $gap;
+    background-color: $bground;
+}
+@mixin grid-area($grid-a, $widt, $heigt){
+    grid-area: $grid-a;
+    width: $widt;
+    height: $heigt;
+}

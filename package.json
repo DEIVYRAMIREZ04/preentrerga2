@@ -1,0 +1,12 @@
+{
+  "name": "preentrega1-ramirez",
+  "version": "1.0.0",
+  "description": "Repositorio preentrega2\r <h1 align=\"center\">Hola 👋, soy DEIVY RAMIREZ</h1>\r <h3 align=\"center\">Una apasionado desarrollador frontend de COLOMBIA</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

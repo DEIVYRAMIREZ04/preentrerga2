@@ -1,0 +1,483 @@
+/*Variables*/
+$color: black;
+$color0: white;
+$color1: darkgreen;
+$color2: blue;
+$color3: gray;
+$color4: brown;
+$color5: red;
+/*partials*/
+@use "reinicio";
+@use "mixin" as body;
+@use "titulos";
+
+
+/*Flex para @extend*/
+.d-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*el body*/
+.body-p {
+    @include body.body-pp(1.5em, bold, 3em);
+    background-image: url(../imagenes/lamina\ acero1.jpg);
+
+}
+
+/*estilos de contacto*/
+/*Pagina*/
+.body-contacto {
+    padding-bottom: 5em;
+    background-color: goldenrod;
+    background: radial-gradient(circle, rgb(226, 226, 229), rgb(136, 168, 194), rgb(15, 103, 245));
+}
+p{
+    font-family:cursive;
+    color: $color;
+}
+ol{
+    li{
+        font-family:cursive;
+            color: $color;
+            padding: 20px;
+    }
+}
+ul{
+    li{
+        font-family:cursive;
+            color: $color;
+            padding: 20px;
+    }
+}
+
+/*Carrusel*/
+
+.yocarrusel {
+    margin: 30px auto;
+    width: 30%;
+}
+
+.tit-carrusel {
+    color: $color;
+    text-align: center;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color1;
+    }
+}
+
+/*formulario*/
+
+.formu {
+    @include body.body-pp(2em, bold, 5vh);
+}
+
+#tit-form {
+    @include body.body-pp(3em, bold, 10vh);
+}
+
+.flex-formu {
+    @extend .d-flex;
+
+    .foot {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        color: $color;
+        background-color: rgb(48, 59, 70);
+        align-content: center;
+        border: 2px solid $color;
+        border-radius: 20px;
+    }
+}
+
+.link {
+    @extend .d-flex;
+    font-size: 1.5em;
+    color: $color1;
+}
+
+
+
+.borde {
+    background-color: $color0;
+    border: 5px solid $color0;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 100;
+
+    .borde-a {
+        text-decoration: none;
+        color: $color1;
+    }
+}
+
+/*logo*/
+.lgo {
+    background-image: url(../imagenes/alfajor-hierro-b.jpg);
+    border: 15px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 75%;
+    }
+
+}
+
+/*social media*/
+#prin {
+    background-color: $color2;
+    margin: 2em;
+    padding: 10px;
+    border: 2px solid $color;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+/*estilos del video*/
+.prin1 {
+    background-color: $color3;
+    width: 50%;
+    height: 500px;
+    border: 8px solid $color;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+/*estilos de las imagenes indiduales*/
+.pro1 {
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 300px;
+    border: 10px solid $color;
+    border-radius: 20px;
+
+}
+
+.pro {
+    width: 20em;
+    height: 20em;
+    border: 5px solid $color2;
+    border-radius: 10px;
+}
+
+/*flex texto e imagen dividir pantalla*/
+.dividir {
+    @extend .d-flex;
+    padding: 10px;
+}
+
+/*mensaje ppal del index*/
+#res {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2em;
+    margin-top: 3em;
+    font-size: 1.5em;
+    color: $color;
+}
+
+/*Boton de inicio*/
+.borde {
+    @include body.posiciones(1000, fixed, 5px);
+    background-color: $color0;
+    border: 5px solid $color0;
+    border-radius: 10px;
+    display: inline-block;
+    bottom: 0px;
+    font-size: 1.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .borde-a {
+        text-decoration: none;
+        color: $color1;
+
+    }
+
+}
+
+/*boton de wsap*/
+.wsap {
+    @include body.posiciones(1000, fixed, 5px);
+    bottom: 20px;
+    right: 20px;
+}
+
+/*diseños nav-cambas*/
+.letra {
+    font-size: 1.5em;
+    color: $color0;
+    font-weight: bold;
+}
+
+/*diseños de grid*/
+/*Smaw*/
+.grid-img {
+    @include body.grid(grid, 10px, $color2);
+    border-radius: 20px;
+    align-items: center;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh 30vh 40vh;
+    grid-template-areas:
+        "puerta tubo porton porton"
+        "escalas sercha porton porton"
+        "escalas pergola pergola pasamanos"
+    ;
+
+    img {
+        border: 5px solid $color2;
+        border-radius: 20px;
+    }
+}
+
+.puerta {
+    @include body.grid-area(puerta, 100%, 100%);
+}
+
+.tubo {
+    @include body.grid-area(tubo, 100%, 100%);
+}
+
+.sercha {
+    @include body.grid-area(sercha, 100%, 100%);
+}
+
+.pergola {
+    @include body.grid-area(pergola, 100%, 100%);
+}
+
+.pasamanos {
+    @include body.grid-area(pasamanos, 100%, 100%);
+}
+
+.escalas {
+    @include body.grid-area(escalas, 100%, 100%);
+}
+
+.porton {
+    @include body.grid-area(porton, 100%, 100%);
+}
+
+/*Mig*/
+.grid-container {
+    @include body.grid(grid, 10px, $color4);
+    border-radius: 20px;
+    align-items: center;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh 40vh 30vh;
+    grid-template-areas:
+        "carros puente puente techo"
+        "catapila edificio edificio techo"
+        "catapila edificio edificio robot"
+    ;
+
+    img {
+        border: 5px solid $color4;
+        border-radius: 20px;
+    }
+}
+
+.carros {
+    @include body.grid-area(carros, 100%, 100%);
+}
+
+.catapila {
+    @include body.grid-area(catapila, 100%, 100%);
+}
+
+.puente {
+    @include body.grid-area(puente, 100%, 100%);
+}
+
+.techo {
+    @include body.grid-area(techo, 100%, 100%);
+}
+
+.edificio {
+    @include body.grid-area(edificio, 100%, 100%);
+}
+
+.robot {
+    @include body.grid-area(robot, 100%, 100%);
+}
+
+/*Tig*/
+.grid-container2 {
+    @include body.grid(grid, 10px, $color2);
+    border-radius: 20px;
+    align-items: center;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40vh 30vh 30vh;
+    grid-template-areas:
+        "tanque tanque tuberia tuberia"
+        "tanque tanque cocina cocina"
+        "tanque tanque cocina cocina"
+    ;
+
+    img {
+        border: 5px solid $color2;
+        border-radius: 20px;
+    }
+}
+
+.tanque {
+    @include body.grid-area(tanque, 100%, 100%);
+}
+
+.tuberia {
+    @include body.grid-area(tuberia, 100%, 100%);
+}
+
+.cocina {
+    @include body.grid-area(cocina, 100%, 100%);
+}
+
+/*anuncio de oferta*/
+
+
+
+.d1 {
+    width: 20%;
+    position: relative;
+    bottom: 5px;
+    left: 20px;
+    border-radius: 50%;
+
+
+}
+
+.d2 {
+    width: 20%;
+    position: relative;
+    top: 15em;
+    left: 20em;
+    border-radius: 50%;
+    animation: scale-down-center 0.6s infinite reverse both;
+}
+
+@-webkit-keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+}
+
+@keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+}
+
+/*anidacion de las listas*/
+.list {
+     p{
+        font-size: 1.5em;
+        color: $color2;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+    }
+       ol {
+       
+        li{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+        }
+    }
+}
+
+
+
+/* Media query para mobiles */
+@media (min-width: 320px) and (max-width: 768px) {
+    .body-p {
+
+        background-image: unset;
+        background-color: grey;
+        font-size: 0.8em;
+        color: rgb(16, 11, 11);
+        margin-bottom: 10em;
+    }
+
+    .pp {
+        padding-top: 8em;
+    }
+
+    .miacanvas {
+        font-size: 8px;
+
+    }
+
+    .tit {
+        padding-top: 60px;
+    }
+
+    .lgo-r {
+        width: 100%;
+
+    }
+
+    .prin1 {
+        width: 80%;
+        height: 200px;
+    }
+
+    .dividir {
+        flex-direction: column;
+    }
+
+    .wsap {
+        bottom: 0;
+        right: 0;
+    }
+
+    .borde {
+        font-size: 1.5em;
+    }
+
+    .res-flex {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    .active {
+        font-size: 3em;
+    }
+
+    .foot {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+}

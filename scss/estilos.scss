@@ -33,22 +33,25 @@ $color5: red;
     background-color: goldenrod;
     background: radial-gradient(circle, rgb(226, 226, 229), rgb(136, 168, 194), rgb(15, 103, 245));
 }
-p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: $color;
 }
-ol{
-    li{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: $color;
-            padding: 20px;
+
+ol {
+    li {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: $color;
+        padding: 20px;
     }
 }
-ul{
-    li{
-        font-family:cursive;
-            color: $color;
-            padding: 20px;
+
+ul {
+    li {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: $color;
+        padding: 20px;
     }
 }
 
@@ -401,16 +404,17 @@ ul{
 
 /*anidacion de las listas*/
 .list {
-     p{
+    p {
         font-size: 1.5em;
         color: $color2;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     
+
     }
-       ol {
-       
-        li{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+
+    ol {
+
+        li {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
     }
 }

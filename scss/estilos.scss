@@ -484,4 +484,7 @@ ul {
         justify-content: center;
 
     }
+    #tit-form {
+        @include body.body-pp(2em, bold, 10vh);
+    }
 }

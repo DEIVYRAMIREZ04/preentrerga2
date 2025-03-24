@@ -484,6 +484,13 @@ ul li {
     font-weight: bold;
     padding: 10vh;
   }
+  .d1 {
+    display: none;
+  }
+  .d2 {
+    top: 5px;
+    left: 10px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

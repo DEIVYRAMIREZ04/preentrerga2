@@ -10,12 +10,12 @@
 }
 
 @mixin flex($display, $j-cont, $padi){
-    display: $display;
+    display: flex;
     justify-content: $cont;
     padding: $padi;
 }
 @mixin grid($disp, $gap, $bground){
-    display: $disp;
+    display:grid;
     gap: $gap;
     background-color: $bground;
 }

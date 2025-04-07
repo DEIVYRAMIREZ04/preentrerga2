@@ -1,14 +1,14 @@
 /*Variables*/
-$color: black;
+$color: rgb(0, 0, 0);
 $color0: white;
-$color1: darkgreen;
-$color2: blue;
+$color1: rgb(14, 58, 14);
+$color2: rgb(2, 2, 71);
 $color3: gray;
 $color4: brown;
 $color5: red;
 /*partials*/
 @use "reinicio";
-@use "mixin" as body;
+@use "mixin" as dr;
 @use "titulos";
 
 
@@ -21,8 +21,14 @@ $color5: red;
 
 /*el body*/
 .body-p {
-    @include body.body-pp(1.5em, bold, 3em);
-    background-image: url(../imagenes/lamina\ acero1.jpg);
+    @include dr.body-pp(1.5em, bold, 3em);
+    /*background-image: url(../imagenes/ambiente.jfif);*/
+    background: radial-gradient(circle, rgb(47, 47, 49), rgb(64, 69, 73), rgb(168, 170, 176));
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 
 }
 
@@ -30,8 +36,7 @@ $color5: red;
 /*Pagina*/
 .body-contacto {
     padding-bottom: 5em;
-    background-color: goldenrod;
-    background: radial-gradient(circle, rgb(226, 226, 229), rgb(136, 168, 194), rgb(15, 103, 245));
+    background: radial-gradient(circle, rgb(68, 67, 0), rgb(118, 129, 87), rgb(171, 182, 17));
 }
 
 p {
@@ -39,21 +44,14 @@ p {
     color: $color;
 }
 
-ol {
-    li {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: $color;
-        padding: 20px;
-    }
+li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $color;
+    padding: 20px;
 }
 
-ul {
-    li {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: $color;
-        padding: 20px;
-    }
-}
+
+
 
 /*Carrusel*/
 
@@ -68,18 +66,18 @@ ul {
     transition: color 0.3s ease;
 
     &:hover {
-        color: $color1;
+        color: $color4;
     }
 }
 
 /*formulario*/
 
 .formu {
-    @include body.body-pp(2em, bold, 5vh);
+    @include dr.body-pp(2em, bold, 5vh);
 }
 
 #tit-form {
-    @include body.body-pp(3em, bold, 10vh);
+    @include dr.body-pp(2.5em, bold, 10vh);
 }
 
 .flex-formu {
@@ -99,29 +97,9 @@ ul {
 
 .link {
     @extend .d-flex;
+    font-family: cursive;
     font-size: 1.5em;
-    color: $color1;
-}
-
-
-
-.borde {
-    background-color: $color0;
-    border: 5px solid $color0;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 5px;
-    position: fixed;
-    bottom: 0px;
-    left: 10px;
-    font-size: 2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    z-index: 100;
-
-    .borde-a {
-        text-decoration: none;
-        color: $color1;
-    }
+    color: rgb(45, 45, 18);
 }
 
 /*logo*/
@@ -142,16 +120,19 @@ ul {
 
 /*social media*/
 #prin {
-    background-color: $color2;
+
     margin: 2em;
     padding: 10px;
-    border: 2px solid $color;
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
-    border-radius: 10px;
     flex-wrap: wrap;
 }
+
+.ico {
+    width: 80px;
+}
+
 
 /*estilos del video*/
 .prin1 {
@@ -199,18 +180,19 @@ ul {
 
 /*Boton de inicio*/
 .borde {
-    @include body.posiciones(1000, fixed, 5px);
-    background-color: $color0;
-    border: 5px solid $color0;
+    @include dr.posiciones(1000, fixed, 5px);
+    background-color: $color1;
+    border: 5px solid $color1;
     border-radius: 10px;
     display: inline-block;
     bottom: 0px;
     font-size: 1.8em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 10px;
 
     .borde-a {
         text-decoration: none;
-        color: $color1;
+        color: $color0;
 
     }
 
@@ -218,7 +200,7 @@ ul {
 
 /*boton de wsap*/
 .wsap {
-    @include body.posiciones(1000, fixed, 5px);
+    @include dr.posiciones(1000, fixed, 5px);
     bottom: 20px;
     right: 20px;
 }
@@ -233,7 +215,7 @@ ul {
 /*diseños de grid*/
 /*Smaw*/
 .grid-img {
-    @include body.grid(grid, 10px, $color2);
+    @include dr.grid(grid, 10px, $color);
     border-radius: 20px;
     align-items: center;
     padding: 15px;
@@ -246,42 +228,42 @@ ul {
     ;
 
     img {
-        border: 5px solid $color2;
+        border: 5px solid $color;
         border-radius: 20px;
     }
 }
 
 .puerta {
-    @include body.grid-area(puerta, 100%, 100%);
+    @include dr.grid-area(puerta, 100%, 100%);
 }
 
 .tubo {
-    @include body.grid-area(tubo, 100%, 100%);
+    @include dr.grid-area(tubo, 100%, 100%);
 }
 
 .sercha {
-    @include body.grid-area(sercha, 100%, 100%);
+    @include dr.grid-area(sercha, 100%, 100%);
 }
 
 .pergola {
-    @include body.grid-area(pergola, 100%, 100%);
+    @include dr.grid-area(pergola, 100%, 100%);
 }
 
 .pasamanos {
-    @include body.grid-area(pasamanos, 100%, 100%);
+    @include dr.grid-area(pasamanos, 100%, 100%);
 }
 
 .escalas {
-    @include body.grid-area(escalas, 100%, 100%);
+    @include dr.grid-area(escalas, 100%, 100%);
 }
 
 .porton {
-    @include body.grid-area(porton, 100%, 100%);
+    @include dr.grid-area(porton, 100%, 100%);
 }
 
 /*Mig*/
 .grid-container {
-    @include body.grid(grid, 10px, $color4);
+    @include dr.grid(grid, 10px, $color);
     border-radius: 20px;
     align-items: center;
     padding: 15px;
@@ -294,38 +276,38 @@ ul {
     ;
 
     img {
-        border: 5px solid $color4;
+        border: 5px solid $color;
         border-radius: 20px;
     }
 }
 
 .carros {
-    @include body.grid-area(carros, 100%, 100%);
+    @include dr.grid-area(carros, 100%, 100%);
 }
 
 .catapila {
-    @include body.grid-area(catapila, 100%, 100%);
+    @include dr.grid-area(catapila, 100%, 100%);
 }
 
 .puente {
-    @include body.grid-area(puente, 100%, 100%);
+    @include dr.grid-area(puente, 100%, 100%);
 }
 
 .techo {
-    @include body.grid-area(techo, 100%, 100%);
+    @include dr.grid-area(techo, 100%, 100%);
 }
 
 .edificio {
-    @include body.grid-area(edificio, 100%, 100%);
+    @include dr.grid-area(edificio, 100%, 100%);
 }
 
 .robot {
-    @include body.grid-area(robot, 100%, 100%);
+    @include dr.grid-area(robot, 100%, 100%);
 }
 
 /*Tig*/
 .grid-container2 {
-    @include body.grid(grid, 10px, $color2);
+    @include dr.grid(grid, 10px, $color);
     border-radius: 20px;
     align-items: center;
     padding: 15px;
@@ -338,21 +320,21 @@ ul {
     ;
 
     img {
-        border: 5px solid $color2;
+        border: 5px solid $color;
         border-radius: 20px;
     }
 }
 
 .tanque {
-    @include body.grid-area(tanque, 100%, 100%);
+    @include dr.grid-area(tanque, 100%, 100%);
 }
 
 .tuberia {
-    @include body.grid-area(tuberia, 100%, 100%);
+    @include dr.grid-area(tuberia, 100%, 100%);
 }
 
 .cocina {
-    @include body.grid-area(cocina, 100%, 100%);
+    @include dr.grid-area(cocina, 100%, 100%);
 }
 
 /*anuncio de oferta*/
@@ -406,7 +388,7 @@ ul {
 .list {
     p {
         font-size: 1.5em;
-        color: $color2;
+        color: $color;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     }
@@ -422,7 +404,7 @@ ul {
 
 
 /* Media query para mobiles */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .body-p {
 
         background-image: unset;
@@ -484,14 +466,17 @@ ul {
         justify-content: center;
 
     }
+
     #tit-form {
-        @include body.body-pp(2em, bold, 10vh);
+        @include dr.body-pp(2em, bold, 10vh);
     }
-    .d1{
-       display: none;
+
+    .d1 {
+        display: none;
     }
-    .d2{
+
+    .d2 {
         top: 5px;
-        left: 10px; 
+        left: 10px;
     }
 }

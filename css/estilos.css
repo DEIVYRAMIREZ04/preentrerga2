@@ -18,16 +18,18 @@ h1 {
 h2 {
   font-size: 2em;
   padding: 2em;
-  color: rgb(140, 25, 25);
+  color: rgb(7, 14, 53);
   font-weight: bold;
   text-decoration: underline;
+  font-family: sans-serif;
 }
 
 h3 {
   font-size: 1.5em;
   padding: 2em;
-  color: rgb(140, 25, 25);
+  color: rgb(123, 88, 0);
   font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*Flex para @extend*/
@@ -42,31 +44,28 @@ h3 {
   font-size: 1.5em;
   font-weight: bold;
   padding: 3em;
-  background-image: url(../imagenes/lamina\ acero1.jpg);
+  /*background-image: url(../imagenes/ambiente.jfif);*/
+  background: radial-gradient(circle, rgb(47, 47, 49), rgb(64, 69, 73), rgb(168, 170, 176));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*estilos de contacto*/
 /*Pagina*/
 .body-contacto {
   padding-bottom: 5em;
-  background-color: goldenrod;
-  background: radial-gradient(circle, rgb(226, 226, 229), rgb(136, 168, 194), rgb(15, 103, 245));
+  background: radial-gradient(circle, rgb(68, 67, 0), rgb(118, 129, 87), rgb(171, 182, 17));
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
-ol li {
+li {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: black;
-  padding: 20px;
-}
-
-ul li {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 20px;
 }
 
@@ -77,12 +76,12 @@ ul li {
 }
 
 .tit-carrusel {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
   transition: color 0.3s ease;
 }
 .tit-carrusel:hover {
-  color: darkgreen;
+  color: brown;
 }
 
 /*formulario*/
@@ -93,7 +92,7 @@ ul li {
 }
 
 #tit-form {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   padding: 10vh;
 }
@@ -102,34 +101,17 @@ ul li {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: rgb(48, 59, 70);
   align-content: center;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 20px;
 }
 
 .link {
+  font-family: cursive;
   font-size: 1.5em;
-  color: darkgreen;
-}
-
-.borde {
-  background-color: white;
-  border: 5px solid white;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 5px;
-  position: fixed;
-  bottom: 0px;
-  left: 10px;
-  font-size: 2em;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  z-index: 100;
-}
-.borde .borde-a {
-  text-decoration: none;
-  color: darkgreen;
+  color: rgb(45, 45, 18);
 }
 
 /*logo*/
@@ -148,15 +130,16 @@ ul li {
 
 /*social media*/
 #prin {
-  background-color: blue;
   margin: 2em;
   padding: 10px;
-  border: 2px solid black;
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
-  border-radius: 10px;
   flex-wrap: wrap;
+}
+
+.ico {
+  width: 80px;
 }
 
 /*estilos del video*/
@@ -164,7 +147,7 @@ ul li {
   background-color: gray;
   width: 50%;
   height: 500px;
-  border: 8px solid black;
+  border: 8px solid rgb(0, 0, 0);
   border-radius: 20px;
   display: block;
   margin: auto;
@@ -176,14 +159,14 @@ ul li {
   margin: auto;
   width: 70%;
   height: 300px;
-  border: 10px solid black;
+  border: 10px solid rgb(0, 0, 0);
   border-radius: 20px;
 }
 
 .pro {
   width: 20em;
   height: 20em;
-  border: 5px solid blue;
+  border: 5px solid rgb(2, 2, 71);
   border-radius: 10px;
 }
 
@@ -198,7 +181,7 @@ ul li {
   margin-left: 2em;
   margin-top: 3em;
   font-size: 1.5em;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 /*Boton de inicio*/
@@ -206,17 +189,18 @@ ul li {
   z-index: 1000;
   position: fixed;
   padding: 5px;
-  background-color: white;
-  border: 5px solid white;
+  background-color: rgb(14, 58, 14);
+  border: 5px solid rgb(14, 58, 14);
   border-radius: 10px;
   display: inline-block;
   bottom: 0px;
   font-size: 1.8em;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 10px;
 }
 .borde .borde-a {
   text-decoration: none;
-  color: darkgreen;
+  color: white;
 }
 
 /*boton de wsap*/
@@ -240,7 +224,7 @@ ul li {
 .grid-img {
   display: grid;
   gap: 10px;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
   align-items: center;
   padding: 15px;
@@ -249,7 +233,7 @@ ul li {
   grid-template-areas: "puerta tubo porton porton" "escalas sercha porton porton" "escalas pergola pergola pasamanos";
 }
 .grid-img img {
-  border: 5px solid blue;
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 20px;
 }
 
@@ -299,7 +283,7 @@ ul li {
 .grid-container {
   display: grid;
   gap: 10px;
-  background-color: brown;
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
   align-items: center;
   padding: 15px;
@@ -308,7 +292,7 @@ ul li {
   grid-template-areas: "carros puente puente techo" "catapila edificio edificio techo" "catapila edificio edificio robot";
 }
 .grid-container img {
-  border: 5px solid brown;
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 20px;
 }
 
@@ -352,7 +336,7 @@ ul li {
 .grid-container2 {
   display: grid;
   gap: 10px;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
   align-items: center;
   padding: 15px;
@@ -361,7 +345,7 @@ ul li {
   grid-template-areas: "tanque tanque tuberia tuberia" "tanque tanque cocina cocina" "tanque tanque cocina cocina";
 }
 .grid-container2 img {
-  border: 5px solid blue;
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 20px;
 }
 
@@ -424,7 +408,7 @@ ul li {
 /*anidacion de las listas*/
 .list p {
   font-size: 1.5em;
-  color: blue;
+  color: rgb(0, 0, 0);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .list ol li {
@@ -432,7 +416,7 @@ ul li {
 }
 
 /* Media query para mobiles */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .body-p {
     background-image: unset;
     background-color: grey;

@@ -44,12 +44,16 @@ h3 {
 .body-p {
   font-size: 1.5em;
   font-weight: bold;
-  padding: 3em;
+  padding: 10px;
   /*background-image: url(../imagenes/ambiente.jfif);*/
-  background: radial-gradient(circle, rgb(58, 58, 59), rgb(64, 69, 73), rgb(168, 170, 176));
+  background: radial-gradient(circle, rgb(174, 174, 175), rgb(216, 230, 241), rgb(168, 170, 176));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.tit {
+  padding-top: 80px;
 }
 
 /*estilos de contacto*/
@@ -59,7 +63,7 @@ h3 {
   background-image: url(../imagenes/sol11.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: darkslategray;
+  background-color: rgb(113, 180, 180);
   padding-top: 5em;
 }
 
@@ -71,7 +75,8 @@ p {
 li {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: rgb(0, 0, 0);
-  padding: 20px;
+  padding: 5px;
+  text-align: start;
 }
 
 .fondo {
@@ -132,7 +137,7 @@ li {
   padding: 5px;
   width: 100%;
   background-color: rgba(47, 79, 79, 0.541);
-  border-radius: 40px;
+  border-radius: 15px;
   color: white;
 }
 
@@ -220,8 +225,7 @@ li {
 /*mensaje ppal del index*/
 #res {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-left: 2em;
-  margin-top: 3em;
+  margin: 3px;
   font-size: 1.5em;
   color: rgb(0, 0, 0);
 }
@@ -253,6 +257,7 @@ li {
   padding: 5px;
   bottom: 20px;
   right: 20px;
+  opacity: 80%;
 }
 
 /*diseños nav-cambas*/
@@ -266,11 +271,11 @@ li {
 /*Smaw*/
 .grid-img {
   display: grid;
-  gap: 10px;
+  gap: 3px;
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
   align-items: center;
-  padding: 15px;
+  padding: 8px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 30vh 30vh 40vh;
   grid-template-areas: "puerta tubo porton porton" "escalas sercha porton porton" "escalas pergola pergola pasamanos";
@@ -325,11 +330,11 @@ li {
 /*Mig*/
 .grid-container {
   display: grid;
-  gap: 10px;
+  gap: 3px;
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
   align-items: center;
-  padding: 15px;
+  padding: 8px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 30vh 40vh 30vh;
   grid-template-areas: "carros puente puente techo" "catapila edificio edificio techo" "catapila edificio edificio robot";
@@ -378,11 +383,11 @@ li {
 /*Tig*/
 .grid-container2 {
   display: grid;
-  gap: 10px;
+  gap: 3px;
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
   align-items: center;
-  padding: 15px;
+  padding: 8px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40vh 30vh 30vh;
   grid-template-areas: "tanque tanque tuberia tuberia" "tanque tanque cocina cocina" "tanque tanque cocina cocina";
@@ -462,10 +467,13 @@ li {
 /* Media query para mobiles */
 @media (max-width: 768px) {
   .body-p {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
     background-image: unset;
-    background-color: grey;
+    background-color: rgb(206, 196, 196);
     font-size: 0.8em;
-    color: rgb(16, 11, 11);
+    color: rgb(106, 109, 108);
     margin-bottom: 10em;
   }
   .body-contacto {
@@ -502,7 +510,7 @@ li {
   .res-flex {
     display: flex;
     flex-direction: column;
-    row-gap: 2em;
+    row-gap: 2px;
   }
   .active {
     font-size: 3em;
@@ -533,6 +541,27 @@ li {
   }
   .lgo {
     border: 2px solid white;
+  }
+  .grid-img {
+    padding: 3px;
+  }
+  .grid-img .img {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0;
+  }
+  .grid-container {
+    padding: 3px;
+  }
+  .grid-container .img {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0;
+  }
+  .grid-container2 {
+    padding: 3px;
+  }
+  .grid-container2 .img {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0;
   }
 }
 

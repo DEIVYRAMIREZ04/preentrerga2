@@ -21,15 +21,17 @@ $color5: red;
 
 /*el body*/
 .body-p {
-    @include dr.body-pp(1.5em, bold, 3em);
+    @include dr.body-pp(1.5em, bold, 10px);
     /*background-image: url(../imagenes/ambiente.jfif);*/
-    background: radial-gradient(circle, rgb(58, 58, 59), rgb(64, 69, 73), rgb(168, 170, 176));
-
+    background: radial-gradient(circle, rgb(174, 174, 175), rgb(216, 230, 241), rgb(168, 170, 176));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
 
+}
+.tit {
+    padding-top: 80px;
 }
 
 /*estilos de contacto*/
@@ -40,7 +42,7 @@ $color5: red;
     background-image: url(../imagenes/sol11.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: darkslategray;
+    background-color: rgb(113, 180, 180);
     padding-top: 5em;
 }
 
@@ -52,7 +54,8 @@ p {
 li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: $color;
-    padding: 20px;
+    padding: 5px;
+    text-align: start;
 }
 
 .fondo {
@@ -121,7 +124,7 @@ li {
     @include dr.body-pp(2.5em, bold, 5px);
     width: 100%;
     background-color: rgba(47, 79, 79, 0.541);
-    border-radius: 40px;
+    border-radius: 15px;
     color: $color0;
 }
 
@@ -220,8 +223,7 @@ li {
 /*mensaje ppal del index*/
 #res {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 2em;
-    margin-top: 3em;
+    margin: 3px;
     font-size: 1.5em;
     color: $color;
 }
@@ -252,6 +254,7 @@ li {
     @include dr.posiciones(1000, fixed, 5px);
     bottom: 20px;
     right: 20px;
+    opacity: 80%;
 }
 
 /*diseños nav-cambas*/
@@ -264,10 +267,10 @@ li {
 /*diseños de grid*/
 /*Smaw*/
 .grid-img {
-    @include dr.grid(grid, 10px, $color);
+    @include dr.grid(grid, 3px, $color);
     border-radius: 20px;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30vh 30vh 40vh;
     grid-template-areas:
@@ -312,10 +315,10 @@ li {
 
 /*Mig*/
 .grid-container {
-    @include dr.grid(grid, 10px, $color);
+    @include dr.grid(grid, 3px, $color);
     border-radius: 20px;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30vh 40vh 30vh;
     grid-template-areas:
@@ -356,10 +359,10 @@ li {
 
 /*Tig*/
 .grid-container2 {
-    @include dr.grid(grid, 10px, $color);
+    @include dr.grid(grid, 3px, $color);
     border-radius: 20px;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40vh 30vh 30vh;
     grid-template-areas:
@@ -456,13 +459,14 @@ li {
 /* Media query para mobiles */
 @media (max-width: 768px) {
     .body-p {
-
+        @include dr.body-pp(1.5em, bold, 10px);
         background-image: unset;
-        background-color: grey;
+        background-color: rgb(206, 196, 196);
         font-size: 0.8em;
-        color: rgb(16, 11, 11);
+        color: rgb(106, 109, 108);
         margin-bottom: 10em;
     }
+
 
     .body-contacto {
        background-image: url(../imagenes/sol11.png);
@@ -509,7 +513,7 @@ li {
     .res-flex {
         display: flex;
         flex-direction: column;
-        row-gap: 2em;
+        row-gap: 2px;
     }
 
     .active {
@@ -544,5 +548,26 @@ li {
     }
     .lgo{
         border: 2px solid white;
+    }
+    .grid-img{
+        padding: 3px;
+        .img{
+            border: 1px solid $color;
+            padding: 0;
+        }
+    }
+    .grid-container{
+        padding: 3px;
+        .img{
+            border: 1px solid $color;
+            padding: 0;
+        }
+    }
+    .grid-container2{
+        padding: 3px;
+        .img{
+            border: 1px solid $color;
+            padding: 0;
+        }
     }
 }

@@ -1,10 +1,94 @@
 Repositorio preentrega2
 <h1 align="center">Hola 👋, soy DEIVY RAMIREZ</h1>
-<h3 align="center">Una apasionado desarrollador frontend de COLOMBIA</h3>
+<h2 align="center">Una apasionado desarrollador frontend de COLOMBIA</h2>
 
-<h3 align="left">Conéctate conmigo:</h3>
+<h2 align="left">Conéctate conmigo:</h2>
 <p align="left">
 </p>
 
-<h3 align="left">Lenguajes y herramientas:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" altura="40"/> </a> </p>
+<h2>🔧 Proyecto de Inicio en el Mundo de la Soldadura <h2/>
+
+<p>¡Bienvenido al apasionante mundo de la **soldadura**! Este proyecto está diseñado para principiantes que desean aprender los fundamentos de la soldadura de forma segura, práctica y progresiva.<p/>
+<section>
+<h3>📘 Descripción</h3>
+
+<p>Este proyecto proporciona una introducción completa a las técnicas básicas de soldadura, incluyendo:
+
+- Seguridad y uso correcto del equipo
+- Tipos de soldadura (MIG, TIG, SMAW)
+- Prácticas iniciales de unión de metales
+- Proyectos sencillos para poner en práctica lo aprendido
+ <p/>
+</section>
+<section>
+ <h3> 🎯 Objetivos del Proyecto<h3/>
+<p>
+- Familiarizarse con los principios de la soldadura.
+- Aprender a utilizar los equipos y herramientas básicas.
+- Desarrollar habilidades prácticas en la unión de metales.
+- Realizar pequeños proyectos útiles y seguros.
+</p>
+</section>
+<sectio>
+<h3> 🧰 Requisitos </h3>
+<p>
+Antes de comenzar, asegúrate de contar con lo siguiente:
+
+- Equipo de protección personal (careta de soldar, guantes, ropa de algodón gruesa)
+- Máquina de soldar básica (MIG recomendada para principiantes)
+- Electrodos o alambre de soldar
+- Cepillo de alambre, esmeriladora, martillo para escoria
+- Piezas de metal para practicar
+  </p>
+</section>
+<section>
+<h3> 📚 Contenido </h3>
+<p>
+1. **Introducción a la Soldadura**
+   - Historia y aplicaciones
+   - Tipos de soldadura
+2. **Seguridad en el Área de Trabajo**
+   - Normas básicas
+   - Prevención de accidentes
+3. **Herramientas y Equipos**
+   - Descripción y uso
+4. **Técnicas Básicas**
+   - Cómo hacer una unión recta
+   - Control del arco y velocidad de avance
+5. **Proyectos Prácticos**
+   - Soporte metálico
+   - Caja o contenedor simple
+   - Rejilla básica
+  </p>
+</section>
+<section>
+  
+<h3> ✅ Primer Proyecto: Unión Recta </h3>
+<p>
+Objetivo: Aprender a realizar una costura continua sobre dos piezas de metal plano.
+
+Pasos:
+
+1. Preparar y limpiar las superficies.
+2. Fijar las piezas con sargentos o imanes.
+3. Ajustar la máquina a los parámetros adecuados.
+4. Soldar manteniendo una distancia y velocidad constantes.
+5. Revisar la soldadura y corregir imperfecciones.
+</p>
+</section>
+<section>
+  
+<h3> 🧠 Consejos para Principiantes </h3>
+<p>
+- La práctica es clave: no te desanimes por errores iniciales.
+- Comienza con metales más fáciles, como acero dulce.
+- Aprende a leer el sonido del arco.
+- Mantén siempre la seguridad como prioridad.
+  </p>
+</section>
+<section>
+  
+<h3> 🤝 Contribuciones </h3>
+<p>
+¿Tienes ideas, mejoras o proyectos para agregar? ¡Bienvenido a contribuir!
+  </p>

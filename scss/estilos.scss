@@ -135,11 +135,12 @@ li {
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 2em;
-        color: $color;
-        background-color: rgb(48, 59, 70);
+        color: $color0;
+        background-color: $color;
         align-content: center;
         border: 2px solid $color;
         border-radius: 20px;
+        padding: 0px 20px 0px 20px;
     }
 }
 

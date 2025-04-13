@@ -2,7 +2,7 @@ Repositorio preentrega2
 <h1 align="center">Hola 👋, soy DEIVY RAMIREZ</h1>
 <h2 align="center">Una apasionado desarrollador frontend de COLOMBIA</h2>
 
-<h2 align="left">Conéctate conmigo:</h2>
+<h2 align="left">Conéctate conmigo: deivrsmirez@gmail.com</h2>
 <p align="left">
 </p>
 

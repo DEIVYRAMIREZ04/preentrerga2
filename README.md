@@ -22,12 +22,12 @@ Repositorio preentrega2
 </section>
 <section>
  <h3> 🎯 Objetivos del Proyecto<h3/>
-<p>
-- Familiarizarse con los principios de la soldadura.
-- Aprender a utilizar los equipos y herramientas básicas.
-- Desarrollar habilidades prácticas en la unión de metales.
-- Realizar pequeños proyectos útiles y seguros.
-</p>
+<ol>
+<li> Familiarizarse con los principios de la soldadura. </li>
+<li> Aprender a utilizar los equipos y herramientas básicas. </li>
+<li> Desarrollar habilidades prácticas en la unión de metales. </li>
+<li> Realizar pequeños proyectos útiles y seguros. </li>
+<ol/>
 </section>
 <sectio>
 <h3> 🧰 Requisitos </h3>

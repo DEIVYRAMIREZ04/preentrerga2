@@ -129,8 +129,8 @@ li {
 #tit-form {
   font-size: 2.5em;
   font-weight: bold;
-  padding: 10vh;
-  width: 70%;
+  padding: 5px;
+  width: 100%;
   background-color: rgba(47, 79, 79, 0.541);
   border-radius: 40px;
   color: white;
@@ -515,7 +515,7 @@ li {
   #tit-form {
     font-size: 2em;
     font-weight: bold;
-    padding: 10vh;
+    padding: 3px;
   }
   .d1 {
     display: none;
